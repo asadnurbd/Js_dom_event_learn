@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Element Object</h1>
+    <h2>The removeChild() Method</h2>
+
+    <p>Click "Remove" to remove the first item from the list:</p>
+    <button onclick="myFunction()">Remove</button>
+
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+
+<script>
+
+    function myFunction(){
+       let last_li=document.getElementById("myList");
+       last_li.removeChild(last_li.lastElementChild);
+    }
+
+</script>
+</body>
+</html>

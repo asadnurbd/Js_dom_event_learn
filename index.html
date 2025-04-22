@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="call"> hello my name is nur please call me nur!</div>
+
+    <div>
+        <p class="class">fast class</p>
+        <p class="class">second class</p>
+        <p class="class">third class</p>
+        
+    </div>
+    <div id="div">
+        <p class="class">new</p>
+        <p class="class2">new</p>
+        <h1>new h1</h1>
+    </div>
+
+
+    <input type="redio" name="button" value="nur">
+    <input type="redio" name="button" value="atik">
+      <h1>fast</h1>
+      <h1>second</h1>
+      <h1>third</h1>
+
+      <div class="fist_child">
+        <h1>heading_1</h1>
+        <h1 class="second">heading_2</h1>
+        <h1>heading_3</h1>
+      </div>
+
+      <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li style="display: none;">projects</li>
+      </ul>
+
+
+    <script>
+       let ID=document.getElementById("call");
+       let Name=document.getElementsByName('button');
+       let tag=document.getElementsByTagName('h1');
+       let cls=document.getElementsByClassName('class');
+       let query=document.querySelector('.class');
+       let queryall=document.querySelectorAll('.class');
+       let queryalldiv=document.querySelectorAll('div,h1');
+       let parent_element=document.querySelector('.class2');
+       let parent_first_child=document.querySelector('.fist_child');
+       let precious_sibling=document.querySelector('.second');
+
+
+
+    //    Element create
+      let div_element=document.createElement('div');
+      div_element.innerHTML="<p>I am div inner tag</p>"
+      div_element.id="id_title"
+      div_element.className="class_title"
+
+
+      let menu=document.getElementById('menu');
+      let list=document.createElement('li');
+      list.innerHTML="contact";
+      menu.appendChild(list)
+
+      document.body.appendChild(div_element)
+
+       console.log(ID);
+       console.log(Name);
+       console.log(tag);
+       console.log(cls);
+       console.log(query);
+       console.log(queryall);
+       console.log(queryalldiv);
+       console.log(parent_element.parentElement);
+       console.log(parent_first_child.firstElementChild);
+       console.log(parent_first_child.lastElementChild);
+       console.log(parent_first_child.childNodes);
+       console.log(precious_sibling.previousElementSibling);
+       console.log(precious_sibling.nextElementSibling);
+
+
+       //Element create
+       console.log(div_element);
+       console.log(menu.innerText);
+       console.log(menu.textContent);
+       menu.textContent="Hello ! i am overwrite menu item !"
+      //  menu.innerHTML="<h1> I am Header 1 !</h1>"
+      //  menu.textContent="<h1> I am Header 1 !</h1>"
+    </script>
+    
+</body>
+</html>
